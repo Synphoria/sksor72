@@ -1,0 +1,535 @@
+body{
+  background-image: url(fondo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.vb{
+    display: flex;
+    background-color: black;
+    margin-bottom: 10px;
+    grid: 10px;
+    flex-wrap: wrap;
+  }
+  .bn{
+    display: flex;
+  /* Quita esto ↓↓↓↓↓↓ */
+  /* position: absolute; */
+  padding: 10px;
+  padding-left: 400px;
+  gap: 200px;
+  font-size: 20px;
+  transition: all 600ms ease;
+  }
+  .bn a{
+      color: white;
+      text-decoration: none;
+      
+  }
+  
+
+
+  .bn :hover{
+    transform: scale(1.1);
+    text-align: center;
+    padding-top: 30px;
+      background-color: grey;
+      width: 50%;
+      height: 50px;
+      border-radius: 10px;
+  }
+  .vc{
+    width: 90px;
+    border-radius: 40px;
+    position: relative;
+    left: 50px;
+    
+  }
+  @media (hover: none) and (pointer: coarse) {
+  .nav-link:hover {
+    color: inherit;
+    transform: none;
+  }
+}
+  @media screen and (max-width: 768px) {
+    .bn {
+        padding-left: 10px;
+        gap: 50px;
+        font-size: 10px;
+       
+    }
+    .vc{
+    
+    left: 10px;
+    
+  }
+  }
+  @media screen and (max-width: 480px) {
+    .bn {
+        padding-left: 5px;
+        gap: 30px;
+        font-size: 8px;
+    }
+    .vc{
+    
+    left: 5px;
+    
+  }
+  }
+
+ 
+  @media (min-width:600px) {
+    .bn {
+        
+        padding-left: 30px;
+        gap: 150px;
+        font-size: 20px;
+    }
+    .vc{
+    
+    left: 20px;
+    
+  }
+  }
+
+
+  .select a{
+    background-color: grey;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    
+  }
+  .titulo{
+    position: relative;
+    text-align: center;
+    
+    background: linear-gradient(90deg,
+    #ff0000,
+    #ffff00,
+    #ff00f3, #0033ff,
+    #ff00c4,#ff0000);
+    font-size: 70px;
+    background-size: 40%;
+    font-family: "Arial", sans-serif;
+    word-spacing: 5px;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animate 10s linear infinite;
+  }
+  .texto{
+    color: white;
+    font-size: 20px;
+    padding-left: 50px;
+    padding-top: 10px;
+    text-align: center;
+  }
+  video{
+    max-width: 400%;  
+    
+    height: 500px;        
+  display: block;      
+  
+  margin: 0 auto;      
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);  
+  margin-bottom: 8%; 
+  }
+  @media screen and (max-width: 768px) {
+  video{
+    max-width: 100%;  
+    height: auto;        
+    display: block;      
+    margin: 0 auto;      
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);  
+    margin-bottom: 8%; 
+  }  
+  }
+  @media screen and (max-width: 480px) {
+    video{
+      max-width: 100%;  
+      height: auto;        
+      display: block;      
+      margin: 0 auto;      
+      box-shadow: 0 0 10px rgba(0,0,0,0.4);  
+      margin-bottom: 8%;
+    }
+  }
+
+ 
+  @media (min-width:600px) {
+    
+  }
+
+
+  .padre{
+    display: flex;
+    padding-left: 110px;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 70px;
+    flex-wrap: wrap;
+    
+  }
+  .img1{
+    position: relative;
+    padding-left: 70px;
+    width: 10%;
+  }
+  .mision{
+    width: 60%;
+    position: relative;
+    margin-left: 20px;
+    padding-top: 10px;
+    font-size: 13px;
+    color: white;
+    
+  }
+  @media (min-width:600px) {
+    .padre {
+      display: flex;
+      padding-left: 10px;
+    }
+    .img1{
+      position: relative;
+      padding-left: 10px;
+      width: 10%;
+    }
+    .mision{
+      width: 40%;
+      position: relative;
+      margin-left: 20px;
+      padding-top: 10px;
+      font-size: 13px;
+      color: white;
+      
+    }
+  }
+  section{
+    color: white;
+    margin-bottom: 50px;
+  }
+  .l{
+    width: 30%;
+    padding-left: 40px;
+  }
+  .o{
+    position: absolute;
+    top: 215%;
+    left: 50%;
+    font-size: 40px;
+  }
+  .g{
+    width: 50%;
+    font-size: 20px;
+    position: absolute;
+    top: 230%;
+    left: 40%;
+  }
+  .os{
+    position: absolute;
+    top: 260%;
+    left: 40%;
+  }
+  .x{
+    text-align: center;
+    font-size: 25px;
+  }
+  section .l,span,.o,.g,.os,.padre,.ap{
+    animation: anima-scroll linear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 30%;
+  }
+@keyframes anima-scroll {
+    from {
+        opacity: 0;
+        translate: 0 100px ;
+        scale: .5;
+    }
+    to {
+        opacity: 1;
+        translate: 0 0;
+        scale: 1;
+    }
+  }
+  @media screen and (max-width: 768px) { /*este sirve para celulares*/
+  .l{
+    width: 100%;
+    padding-left: 0px;
+  } 
+  .o{
+    position: absolute;
+    top: 270%;
+    left: 30%;
+    font-size: 30px;
+  }
+  .g{
+    width: 70%;
+    font-size: 15px;
+    position: absolute;
+    top: 290%;
+    left: 30px;
+  }
+  .os{
+    position: absolute;
+    top: 320%;
+    left: 30px;
+    font-size: 20px;
+  }
+}
+  @media screen and (max-width: 480px) {
+    .l{
+      width: 100%;
+      padding-left: 0px;
+    }
+    .o{
+      position: absolute;
+      top: 250%;
+      left: 50%;
+      font-size: 25px;
+    }
+    .g{
+      width: 100%;
+      font-size: 12px;
+      position: absolute;
+      top: 270%;
+      left: 50%;
+    }
+    .os{
+      position: absolute;
+      top: 300%;
+      left: 50%;
+    }
+  } 
+  @media (min-width:600px) {
+    .l{
+      width: 100%;
+      padding-left: 0px;
+    }
+    .o{
+      position: absolute;
+      top: 370%;
+      left: 30%;
+      font-size: 25px;
+    }
+    .g{
+      width: 50%;
+      font-size: 17px;
+      position: absolute;
+      top: 390%;
+      left: 30%;
+    }
+    .os{
+      position: absolute;
+      top: 440%;
+      left: 30%;
+    }
+  }
+  
+  .carousel {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  max-width: 100vw;
+  height: 80vh; 
+  position: relative;
+  margin-bottom: 70px;
+}
+
+.carousel .car {
+  flex: 0 0 auto;
+  animation: scroll 20s linear infinite;
+}
+
+.carousel img {
+  height: 80vh;   /* Se adapta verticalmente */
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 0 5px;
+}
+
+/* Animación automática */
+@keyframes scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
+.k{
+  position: relative;
+  display: inline-block;
+}
+.p{
+  width:190%;
+  height: 700px;
+}
+.text{
+  position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 20px;
+}
+
+.ap{
+  text-align: center;
+  margin-bottom: 30px;
+}
+.m{
+  position: relative;
+  left: 15%;
+  margin-bottom: 20px;
+}
+.qr{
+  position: relative;
+  top: 40px;
+  left: 15%; 
+  width: 50%;
+  margin-bottom: 50px;
+}
+.v{
+  position: absolute;
+  position: relative;
+  top: 10px;
+  left: 20%;
+  background-color: rgb(25, 19, 100);
+  width: 150px;
+  height: 50px;
+  color: white;
+  border-radius: 10px;
+  
+}
+.v a{
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+}
+.r{
+  position: relative;
+  top: -300px;
+  left: 180%;
+  margin-bottom: 50px;
+  color: white;
+}
+/* From Uiverse.io by adamgiebl */ 
+.cssbuttons-io-button {
+  display: flex;
+  position: relative;
+  top: -270px;
+  left: 180%;
+  align-items: center;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 40px;
+  padding: 0.8em 1.5em 0.8em 1.2em;
+  color: white;
+  background: #ff7d00;
+  background: linear-gradient(0deg, rgba(255, 125, 0, 1) 0%, rgba(255, 95, 109, 1) 100%);
+  border: 2px solid #ff7d00;
+  border-radius: 20em;
+}
+.cssbuttons-io-button a{
+  color: white;
+  text-decoration: none;
+}
+
+.cssbuttons-io-button svg {
+  margin-right: 8px;
+}
+
+.cssbuttons-io-button:hover {
+  border-color: white;
+  border: 3px solid white;
+  box-shadow: 0 0.5em 1.5em -0.5em #bf5800;
+}
+
+.cssbuttons-io-button:active {
+  box-shadow: 0 0.3em 1em -0.5em #bf5800;
+}
+
+.footer {
+  background-color: #111;
+  color: #fff;
+  padding: 40px 20px 10px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-logo h2 {
+  margin-bottom: 10px;
+  color: #00bcd4;
+}
+
+.footer-socials .icons a {
+  color: #fff;
+  margin-right: 15px;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.footer-socials .icons a:hover {
+  color: #00bcd4;
+}
+
+.footer-info p,
+.footer-socials h3,
+.footer-info h3 {
+  margin: 5px 0;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+  border-top: 1px solid #444;
+  padding-top: 10px;
+}
+
+ @media screen and (max-width: 768px) { /*este sirve para celulares*/
+  .r{
+    position: relative;
+  top: 60px;
+  left: 15%; 
+  margin-bottom: 50px;
+  }
+  .cssbuttons-io-button{
+    position: relative;
+  top: 70px;
+  left: 15%; 
+  margin-bottom: 50px;
+  font-size: 20px;
+  }
+  .p{
+  width:100%;
+  height: 700px;
+}
+}
+@media (min-width:600px) {
+  .r{
+    position: relative;
+  top: 60px;
+  left: 15%; 
+  margin-bottom: 50px;
+  }
+  .cssbuttons-io-button{
+    position: relative;
+  top: 70px;
+  left: 15%; 
+  margin-bottom: 50px;
+  font-size: 20px;
+  }
+  .p{
+  width:130%;
+  height: 700px;
+}
+}
+
+
