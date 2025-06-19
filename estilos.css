@@ -260,7 +260,7 @@ body{
   } 
   .o{
     position: absolute;
-    top: 270%;
+    top: 240%;
     left: 30%;
     font-size: 30px;
   }
@@ -268,12 +268,12 @@ body{
     width: 70%;
     font-size: 15px;
     position: absolute;
-    top: 290%;
+    top: 245%;
     left: 30px;
   }
   .os{
     position: absolute;
-    top: 320%;
+    top: 255%;
     left: 30px;
     font-size: 20px;
   }
